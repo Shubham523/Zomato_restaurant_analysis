@@ -4,8 +4,6 @@ import plotly.express as px
 
 # Load data
 df = pd.read_csv('zomato_cleaned.csv')
-df = df.drop(columns=['reviews_list', 'menu_item', 'address'])
-df.to_csv('zomato_cleaned.csv', index=False)
 
 # Page config
 st.set_page_config(page_title="Zomato Bangalore Dashboard", layout="wide")
